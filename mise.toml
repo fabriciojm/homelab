@@ -1,0 +1,5 @@
+[tools]
+kubectl = "latest"
+
+[env]
+KUBECONFIG = "/workspaces/homelab/kubeconfig"
