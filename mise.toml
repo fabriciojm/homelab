@@ -1,5 +1,6 @@
 [tools]
 kubectl = "latest"
+sops = "latest"
 
 [env]
 KUBECONFIG = "/workspaces/homelab/kubeconfig"
