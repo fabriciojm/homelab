@@ -3,4 +3,6 @@ creation_rules:
     encrypted_regex: ^(data|stringData)$
     age: age1v4pkpl5x2ta8ps2lfzxpws88wyqgqzk9u5rpfwnwkt9a560suyuqmaz65a
 
+  - path_regex: .*.*.json$
+    age: age1v4pkpl5x2ta8ps2lfzxpws88wyqgqzk9u5rpfwnwkt9a560suyuqmaz65a
 
