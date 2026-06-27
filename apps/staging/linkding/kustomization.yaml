@@ -1,15 +1,5 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
-namespace: linkding
-secretGenerator:
-  - name: bookmark-tunnel-credentials
-    files:
-      - credentials.json
-
-generatorOptions:
-  disableNameSuffixHash: true
-
 resources:
   - ../../base/linkding
   - cloudflare.yaml
-  - test-secret.yaml
