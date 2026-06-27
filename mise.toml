@@ -4,3 +4,4 @@ sops = "latest"
 
 [env]
 KUBECONFIG = "/workspaces/homelab/kubeconfig"
+AGE_PUBLIC="age1v4pkpl5x2ta8ps2lfzxpws88wyqgqzk9u5rpfwnwkt9a560suyuqmaz65a"
