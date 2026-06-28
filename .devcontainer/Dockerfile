@@ -5,7 +5,7 @@ FROM mcr.microsoft.com/devcontainers/base:ubuntu-24.04
 COPY --from=jdxcode/mise /usr/local/bin/mise /usr/local/bin/
 
 USER root
-RUN && chown root:root /etc/sudo.conf \
+RUN chown root:root /etc/sudo.conf \
     && chmod 0440 /etc/sudo.conf
 
 USER vscode
