@@ -4,11 +4,6 @@ FROM mcr.microsoft.com/devcontainers/base:ubuntu-24.04
 # Copy latest mise image
 COPY --from=jdxcode/mise /usr/local/bin/mise /usr/local/bin/
 
-# USER root
-# RUN chown root:root /etc/sudo.conf \
-#     && chmod 0440 /etc/sudo.conf \
-#     && chown root:root /usr/bin/sudo \
-#     && chmod 4755 /usr/bin/sudo
 
 #USER vscode
 # make sure mise is activated in both zsh and bash. Might be overridden by a user's dotfiles.
