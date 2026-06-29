@@ -3,7 +3,5 @@
     "context": "..",
     "dockerfile": "Dockerfile"
   },
-  "mounts": [ "source=${localEnv:SSH_AUTH_SOCK},target=/ssh-agent,type=bind" ],
-  "remoteEnv": { "SSH_AUTH_SOCK": "/ssh-agent" },
   "postCreateCommand": "scripts/setup.sh"
 }
