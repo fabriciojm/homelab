@@ -30,5 +30,6 @@ spec:
       adminPassword: fabricio
       ingress:
         enabled: true
+        ingressClassName: traefik
         hosts:
           - grafana.fabriciojm.xyz
