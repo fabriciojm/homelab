@@ -1,26 +1,26 @@
 apiVersion: v1
 data:
-    RENOVATE_TOKEN: ENC[AES256_GCM,data:fXY0DZvZxnOjylzS+T27yz/stVXDZHOUiy114wjT3QR62vE4ZfBBiQC9AyMF+sqMEhCYM7bncfqh+7OqxJ7V+I3bnpz59RDDbw4LMhaclw6eLb2mzPFkfjTY8AL3rfIiYCkvTK8CXJlYVH8Vd+nz55W2WuS76A4ditPKUWR7GyJPKbPcKGjYfpaaC6njr/CB96nRxQ==,iv:tUZ/0PhT3wRzRPTCH5H/f2s5EXrscq/LUSJxQ0R0MVE=,tag:ljLBLmvLD87jOyVZ2xKGmw==,type:str]
+    RENOVATE_TOKEN: ENC[AES256_GCM,data:fZWO6daDvbIZ9KU58nH1kkQ/59Nmtrxl2J318ydycUDvxj2Q/BVGk2oPlbFanOCABGiPaOux0bykRY/orRaYX4nxHWRcVXlLkdiVpbct8zp3mi99xeFHOtdU1R3wlHRqqONxhw5OrZ8BGvE5XtVWKj1IghilpdfTaKPjRys4UX31yreQVMDa5JrXgbrY1ZuWeS4zVA==,iv:GlJYT1aGZi1fpDbzpVbGQQ9s/svOg7fiufl3W7u6gUk=,tag:cxHfpFw88Yo1Mj77HJhS/Q==,type:str]
 kind: Secret
 metadata:
-    creationTimestamp: "2026-07-13T15:25:31Z"
+    creationTimestamp: "2026-07-13T15:33:24Z"
     name: renovate-container-env
-    namespace: linkding
-    resourceVersion: "4264748"
-    uid: d6747d1a-5d6e-4fd1-846f-d8889f570b4c
+    namespace: renovate
+    resourceVersion: "4265487"
+    uid: 2e41a8de-660c-456a-adc9-e2b0396f98d0
 type: Opaque
 sops:
     age:
         - enc: |
             -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBHWWFKQkNEbVY3c2RuUHQy
-            QmdxVTYzckpaZzhKWjhrQkxEZ1hSQ1RoTlhVClFLTXZuQnJaR0pnQW95YWxsK284
-            dUhqV3drQ2FFWTB5bDB0bE4zUDNXZlkKLS0tIHVia250K2lQY2Nwc0xIRUxrNjVn
-            U25jM1NxQ0xyWThlNVF3ODY4djRtaWsKo4ZZDDM+MUKab1uY0UQ3k26BxDCdYsJr
-            SdxvvQysb8D7uSdYbcimXRhxPRWQE4Zx4ZCySoQg9/RGIuJIRrOpmQ==
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBmbFNkUWRYU1hXdStrRkg2
+            bGJXaTVvWWtSU3dsOFc4TTQyWWUzRkpPOTNZClUxa0tGbEhMajRDLys4RDZOTlNs
+            TzU5N05pRnB3YzZpYkhxZ1dPa2ZwdncKLS0tIDBWMEloRVdsWGlGYnZCaEhkd0Np
+            Vks5c0k5bHNxSUZPRHVWNWFmeVhXSVUKhnWuvmN4JKXo83etsXj89M8YfRBT2k+J
+            0X+diN/3lKLf2ykltaNlpuG4xlZhTbvaNxtRGWtsd3i/XVnCMkxQig==
             -----END AGE ENCRYPTED FILE-----
           recipient: age1v4pkpl5x2ta8ps2lfzxpws88wyqgqzk9u5rpfwnwkt9a560suyuqmaz65a
     encrypted_regex: ^(data|stringData)$
-    lastmodified: "2026-07-13T15:25:41Z"
-    mac: ENC[AES256_GCM,data:Oj3DnuQADk9bpwZvGkuTJarnBWxe0gbAh/FJTNrSFO8VoeYExkSJt2JzDKuVjAZGBYz0/QUD/P1Be55KyEt9K6pjU7MUQslWoEeEcUWyCRRSkYCy7AR6NHa9Rzx04QUkQBmazVOC8Z6qFh545Q+rrKiqtrHrEBKW06D0H9vxIcQ=,iv:iO29Vz36vSiRBWiokGFsbjtvigo8Y7qLa3PXG+ZXx/E=,tag:TmBBhtcctah2gWV9Ny927Q==,type:str]
+    lastmodified: "2026-07-13T15:33:28Z"
+    mac: ENC[AES256_GCM,data:+p7ovU04c0FHZeog43w6+WxDNDJ4pnjAh/V3jL+6y/yEsWWd9MQhmXylrjAyNdxXM1vUptYsn1apwMJQA/lGOQVLDN7MLZ3O+MdVAq8Eebo6hsd7C6Td2JQdY/ZY3um+BL3JKY+dRSpVdVG5Dw+yN8JysJ8MLhg4rBM64m8J45Y=,iv:hSk5TPxCJx9ZjEtvbeShZE/zbHlPlbdh6AHdMRyVJRI=,tag:taHFIsPh/dlD7MjyttYoCQ==,type:str]
     version: 3.13.2
