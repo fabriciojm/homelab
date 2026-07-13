@@ -1,26 +1,26 @@
 apiVersion: v1
 data:
-    RENOVATE_TOKEN: ENC[AES256_GCM,data:H5MbQ2plskt6Xh/14/UVL1v3y7eC3PeDz0G1aw1nJGv4oVrJx/OLkSvwvxrPHPxGl+IRrh7WLGwyf/Img7nzb6aM86a8P/d1Ra922iGcCPMvA6iPTJOqxQtitor/k5CtfehQzNQhXEm+C7/H83jSfdqJnqF41pJWgf84HkAEI5g7nuQGV/GMZcerbxhzx2+3zUf4/g==,iv:av+e7PcIqZDim7dsHLRPfEWOQJYya0vfdjbUbaXQ5d0=,tag:LapqNJBwi8JAgGpM2hFBGQ==,type:str]
+    RENOVATE_TOKEN: ENC[AES256_GCM,data:fXY0DZvZxnOjylzS+T27yz/stVXDZHOUiy114wjT3QR62vE4ZfBBiQC9AyMF+sqMEhCYM7bncfqh+7OqxJ7V+I3bnpz59RDDbw4LMhaclw6eLb2mzPFkfjTY8AL3rfIiYCkvTK8CXJlYVH8Vd+nz55W2WuS76A4ditPKUWR7GyJPKbPcKGjYfpaaC6njr/CB96nRxQ==,iv:tUZ/0PhT3wRzRPTCH5H/f2s5EXrscq/LUSJxQ0R0MVE=,tag:ljLBLmvLD87jOyVZ2xKGmw==,type:str]
 kind: Secret
 metadata:
-    creationTimestamp: "2026-07-13T12:48:58Z"
+    creationTimestamp: "2026-07-13T15:25:31Z"
     name: renovate-container-env
     namespace: linkding
-    resourceVersion: "4251705"
-    uid: b9e36cdd-370f-4239-870f-7b6019bedde3
+    resourceVersion: "4264748"
+    uid: d6747d1a-5d6e-4fd1-846f-d8889f570b4c
 type: Opaque
 sops:
     age:
         - enc: |
             -----BEGIN AGE ENCRYPTED FILE-----
-            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBXNEZ0a3owTnBsL2MxcGd2
-            NDhpclF2NDJndWpxNXNaM0J5QVNSOFhEMDJzCmlmclo1WE1pQnhhZFFlZlRkcDVu
-            eXZBZlpOWFFVb0UzWFN2WGdQYktyWm8KLS0tIG4wK0U0V0o4K1VEbGtGaXA3Y0Nn
-            cVdKT01LS2dERUFLbnE4UHM4TW11TUkKUiOuZS7ORQlAR03CaCYGj/cUh+HQTbsZ
-            CUmBaNGr1Z54VeShGUrTh0wQbaH0aW1TVtTKsiI5CLHrlJo4jzv2VA==
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBHWWFKQkNEbVY3c2RuUHQy
+            QmdxVTYzckpaZzhKWjhrQkxEZ1hSQ1RoTlhVClFLTXZuQnJaR0pnQW95YWxsK284
+            dUhqV3drQ2FFWTB5bDB0bE4zUDNXZlkKLS0tIHVia250K2lQY2Nwc0xIRUxrNjVn
+            U25jM1NxQ0xyWThlNVF3ODY4djRtaWsKo4ZZDDM+MUKab1uY0UQ3k26BxDCdYsJr
+            SdxvvQysb8D7uSdYbcimXRhxPRWQE4Zx4ZCySoQg9/RGIuJIRrOpmQ==
             -----END AGE ENCRYPTED FILE-----
           recipient: age1v4pkpl5x2ta8ps2lfzxpws88wyqgqzk9u5rpfwnwkt9a560suyuqmaz65a
     encrypted_regex: ^(data|stringData)$
-    lastmodified: "2026-07-13T12:51:22Z"
-    mac: ENC[AES256_GCM,data:DlrRH2Owrv31Xnfnjcy7SbcUfELgf4Faz/H6ixPPrP9MyQYhY05/1Y5EIP1+T2GwiFXCWK2LCUQUy4Ub4a1G6YKxTTeEzQV8yj+sYjrR6s5ehPc5BMQX/ioXFvPFdDOK9B4HJgm/LlrbErJZWQUeJXi4tN7swRINeFJFdH2QhUQ=,iv:oLheBXO38MQdJ7rhkDBBm76a/3rMoQLWCElKEpveKdE=,tag:q6NA7HeKJUsZsDVrmJJmjA==,type:str]
+    lastmodified: "2026-07-13T15:25:41Z"
+    mac: ENC[AES256_GCM,data:Oj3DnuQADk9bpwZvGkuTJarnBWxe0gbAh/FJTNrSFO8VoeYExkSJt2JzDKuVjAZGBYz0/QUD/P1Be55KyEt9K6pjU7MUQslWoEeEcUWyCRRSkYCy7AR6NHa9Rzx04QUkQBmazVOC8Z6qFh545Q+rrKiqtrHrEBKW06D0H9vxIcQ=,iv:iO29Vz36vSiRBWiokGFsbjtvigo8Y7qLa3PXG+ZXx/E=,tag:TmBBhtcctah2gWV9Ny927Q==,type:str]
     version: 3.13.2
