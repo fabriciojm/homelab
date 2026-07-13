@@ -1,0 +1,26 @@
+apiVersion: v1
+data:
+    RENOVATE_TOKEN: ENC[AES256_GCM,data:H5MbQ2plskt6Xh/14/UVL1v3y7eC3PeDz0G1aw1nJGv4oVrJx/OLkSvwvxrPHPxGl+IRrh7WLGwyf/Img7nzb6aM86a8P/d1Ra922iGcCPMvA6iPTJOqxQtitor/k5CtfehQzNQhXEm+C7/H83jSfdqJnqF41pJWgf84HkAEI5g7nuQGV/GMZcerbxhzx2+3zUf4/g==,iv:av+e7PcIqZDim7dsHLRPfEWOQJYya0vfdjbUbaXQ5d0=,tag:LapqNJBwi8JAgGpM2hFBGQ==,type:str]
+kind: Secret
+metadata:
+    creationTimestamp: "2026-07-13T12:48:58Z"
+    name: renovate-container-env
+    namespace: linkding
+    resourceVersion: "4251705"
+    uid: b9e36cdd-370f-4239-870f-7b6019bedde3
+type: Opaque
+sops:
+    age:
+        - enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBXNEZ0a3owTnBsL2MxcGd2
+            NDhpclF2NDJndWpxNXNaM0J5QVNSOFhEMDJzCmlmclo1WE1pQnhhZFFlZlRkcDVu
+            eXZBZlpOWFFVb0UzWFN2WGdQYktyWm8KLS0tIG4wK0U0V0o4K1VEbGtGaXA3Y0Nn
+            cVdKT01LS2dERUFLbnE4UHM4TW11TUkKUiOuZS7ORQlAR03CaCYGj/cUh+HQTbsZ
+            CUmBaNGr1Z54VeShGUrTh0wQbaH0aW1TVtTKsiI5CLHrlJo4jzv2VA==
+            -----END AGE ENCRYPTED FILE-----
+          recipient: age1v4pkpl5x2ta8ps2lfzxpws88wyqgqzk9u5rpfwnwkt9a560suyuqmaz65a
+    encrypted_regex: ^(data|stringData)$
+    lastmodified: "2026-07-13T12:51:22Z"
+    mac: ENC[AES256_GCM,data:DlrRH2Owrv31Xnfnjcy7SbcUfELgf4Faz/H6ixPPrP9MyQYhY05/1Y5EIP1+T2GwiFXCWK2LCUQUy4Ub4a1G6YKxTTeEzQV8yj+sYjrR6s5ehPc5BMQX/ioXFvPFdDOK9B4HJgm/LlrbErJZWQUeJXi4tN7swRINeFJFdH2QhUQ=,iv:oLheBXO38MQdJ7rhkDBBm76a/3rMoQLWCElKEpveKdE=,tag:q6NA7HeKJUsZsDVrmJJmjA==,type:str]
+    version: 3.13.2
