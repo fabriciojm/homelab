@@ -33,3 +33,7 @@ spec:
         ingressClassName: traefik
         hosts:
           - grafana.fabriciojm.xyz
+        tls:
+          - secretName: grafana-tls-secret
+            hosts:
+              - grafana.fabriciojm.xyz
