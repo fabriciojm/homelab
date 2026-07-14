@@ -23,7 +23,9 @@ spec:
           image: ghcr.io/advplyr/audiobookshelf:latest
           #image: sissbruecker/audiobookshelf:1.31.0
           ports:
-            - containerPort: 13378
+            - name: http
+              containerPort: 80 #metadata
+              protocol: TCP
 
       #     securityContext:
       #       allowPrivilegeEscalation: false
