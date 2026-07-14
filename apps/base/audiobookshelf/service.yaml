@@ -5,7 +5,7 @@ metadata:
   namespace: audiobookshelf
 spec:
   ports:
-    - port: 3005
+    - port: 13378
       targetPort: 13378
   selector:
     app: audiobookshelf
