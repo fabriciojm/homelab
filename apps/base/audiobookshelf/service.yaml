@@ -5,8 +5,9 @@ metadata:
   namespace: audiobookshelf
 spec:
   ports:
-    - port: 13378
-      targetPort: 80
+    - port: 80
+      targetPort: 13378
   selector:
     app: audiobookshelf
   type: ClusterIP
+  # type: LoadBalancer
