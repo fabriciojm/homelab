@@ -24,7 +24,7 @@ spec:
           #image: sissbruecker/audiobookshelf:1.31.0
           ports:
             - name: http
-              containerPort: 80 #metadata
+              containerPort: 80
               protocol: TCP
 
       #     securityContext:
