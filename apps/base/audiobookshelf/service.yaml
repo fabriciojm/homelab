@@ -6,10 +6,12 @@ metadata:
 spec:
   ports:
     - name: http
-      # port: 80
-      port: 3005
-      targetPort: http
-      protocol: TCP
+      # port: 3005
+      # targetPort: http
+      # protocol: TCP
+      envFrom:
+        - configMapRef:
+            name: audiobookshelf-configmap
   selector:
     app: audiobookshelf
   type: ClusterIP
