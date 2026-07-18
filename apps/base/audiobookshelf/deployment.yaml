@@ -23,7 +23,7 @@ spec:
           image: ghcr.io/advplyr/audiobookshelf:latest
           envFrom:
             - configMapRef:
-              name: audiobookshelf-configmap
+                name: audiobookshelf-configmap
 
       #     securityContext:
       #       allowPrivilegeEscalation: false
