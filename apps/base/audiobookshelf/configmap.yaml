@@ -4,6 +4,5 @@ metadata:
   name: audiobookshelf-configmap
   namespace: audiobookshelf
 data:
-  port: 3005
-  targetPort: "http"
-  protocol: "TCP"
+  # https://audiobookshelf.org/docs/documentation/install/configuration
+  PORT: "3005"

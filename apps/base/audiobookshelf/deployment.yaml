@@ -21,11 +21,9 @@ spec:
       containers:
         - name: audiobookshelf
           image: ghcr.io/advplyr/audiobookshelf:latest
-          #image: sissbruecker/audiobookshelf:1.31.0
-          ports:
-            - name: http
-              containerPort: 80
-              protocol: TCP
+          envFrom:
+            - configMapRef:
+              name: audiobookshelf-configmap
 
       #     securityContext:
       #       allowPrivilegeEscalation: false
