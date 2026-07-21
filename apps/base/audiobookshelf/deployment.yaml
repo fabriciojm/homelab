@@ -13,15 +13,23 @@ spec:
       labels:
         app: audiobookshelf
     spec:
+      securityContext:
+        runAsUser: 1000
+        runAsGroup: 1000
+        fsGroup: 1000
+        fsGroupChangePolicy: OnRootMismatch
       containers:
         - name: audiobookshelf
           image: ghcr.io/advplyr/audiobookshelf:latest
           securityContext:
             allowPrivilegeEscalation: false
+            runAsNonRoot: true
+            capabilities:
+              drop:
+                - ALL
           envFrom:
             - configMapRef:
                 name: audiobookshelf-configmap
-          user: 1000:1000 # node user and group
           #   - secretRef:
           #       name: audiobookshelf-container-env
           volumeMounts:
