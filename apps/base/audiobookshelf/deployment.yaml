@@ -13,25 +13,21 @@ spec:
       labels:
         app: audiobookshelf
     spec:
-      # securityContext:
-      #   fsGroup: 33 # www-data group ID
-      #   runAsUser: 33 # www-data user ID
-      #   runAsGroup: 33 # www-data group ID
+      securityContext:
+        fsGroup: 1000 # node group ID
+        runAsUser: 1000 # node user ID
+        runAsGroup: 1000 # node group ID
 
       containers:
         - name: audiobookshelf
           image: ghcr.io/advplyr/audiobookshelf:latest
+          securityContext:
+            allowPrivilegeEscalation: false
           envFrom:
             - configMapRef:
                 name: audiobookshelf-configmap
-
-          #     securityContext:
-          #       allowPrivilegeEscalation: false
-
-          #     envFrom:
-          #       - secretRef:
-          #           name: audiobookshelf-container-env
-
+          #   - secretRef:
+          #       name: audiobookshelf-container-env
           volumeMounts:
             - name: audiobookshelf-config
               mountPath: /config
