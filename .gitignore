@@ -3,3 +3,5 @@ kubeconfig
 age.agekey
 /tls.crt
 /tls.key
+ansible/secrets.yml
+/ansible/secrets.yaml
