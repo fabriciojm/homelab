@@ -1,7 +1,10 @@
 [tools]
 helm = "latest"
 kubectl = "latest"
+pipx = "latest"
 sops = "latest"
+python = "3.12"
+ansible = "latest"
 
 [env]
 KUBECONFIG = "/workspaces/homelab/kubeconfig"
