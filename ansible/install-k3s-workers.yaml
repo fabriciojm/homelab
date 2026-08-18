@@ -1,0 +1,65 @@
+---
+- name: Prepare and install k3s workers
+  hosts: k3s_workers
+  become: true
+
+  vars_files:
+    - vars.yml
+
+  tasks:
+    # -----------------------
+    # Node preparation
+    # -----------------------
+
+    - name: Check if swap is enabled
+      ansible.builtin.command: swapon --show
+      register: swap_status
+      changed_when: false
+
+    - name: Disable swap
+      ansible.builtin.command: swapoff -a
+      when: swap_status.stdout != ""
+
+    # Because funny stuff happens in Arch
+    - name: Load required kernel modules
+      community.general.modprobe:
+        name: "{{ item }}"
+        state: present
+      loop:
+        - overlay
+        - br_netfilter
+
+    - name: Configure Kubernetes sysctl settings
+      ansible.posix.sysctl:
+        name: "{{ item.name }}"
+        value: "{{ item.value }}"
+        state: present
+        reload: true
+      loop:
+        - name: net.bridge.bridge-nf-call-iptables
+          value: "1"
+        - name: net.ipv4.ip_forward
+          value: "1"
+
+    # -----------------------
+    # k3s installation
+    # -----------------------
+
+    - name: Install k3s agent
+      ansible.builtin.shell: |
+        curl -sfL https://get.k3s.io | \
+        K3S_URL={{ k3s_server_url }} \
+        K3S_TOKEN={{ k3s_token }} \
+        sh -
+      args:
+        creates: /etc/systemd/system/k3s-agent.service
+
+    # -----------------------
+    # Ensure service is running
+    # -----------------------
+
+    - name: Ensure k3s agent is enabled and running
+      ansible.builtin.systemd:
+        name: k3s-agent
+        enabled: true
+        state: started
