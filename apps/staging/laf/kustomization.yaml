@@ -4,5 +4,5 @@ namespace: laf
 resources:
   - ../../../apps/base/laf
   - ../../../apps/base/laf-api
-  # - ../../../apps/base/laf-inference
+  - ../../../apps/base/laf-inference
   # - ../../../apps/base/laf-dashboard

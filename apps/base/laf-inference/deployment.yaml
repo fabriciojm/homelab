@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: laf-inference
+  namespace: laf
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: laf-inference
+  template:
+    metadata:
+      labels:
+        app: laf-inference
+    spec:
+      nodeSelector:
+        workload: inference
+      containers:
+        - name: laf-inference
+          image: ghcr.io/fabriciojm/laf-inference:latest
+          ports:
+            - name: http
+              containerPort: 8000
+          envFrom:
+            - configMapRef:
+                name: laf-inference-configmap
+          #   - secretRef:
+          #       name: laf-inference-container-env
