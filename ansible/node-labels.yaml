@@ -1,0 +1,12 @@
+- name: Configure Kubernetes node labels
+  hosts: k3s_nodes
+  become: false
+
+  tasks:
+    - name: Apply Kubernetes node labels
+      ansible.builtin.command:
+        cmd: >
+          kubectl label node {{ inventory_hostname }}
+          {{ item }}
+          --overwrite
+      loop: "{{ kubernetes_node_labels[inventory_hostname] | default([]) }}"

@@ -1,0 +1,9 @@
+kubernetes_node_labels:
+  cocorote:
+    - workload=services
+
+  guama:
+    - workload=inference
+
+  boraure:
+    - workload=inference
