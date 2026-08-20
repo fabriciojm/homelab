@@ -4,5 +4,5 @@ metadata:
   name: laf-inference-configmap
   namespace: laf
 data:
-  MODEL_PATH: "/models/sd-turbo/sd_turbo.safetensors"
+  MODEL_PATH: "/models/sd_turbo.safetensors"
   OUTPUT_DIR: "/output"
