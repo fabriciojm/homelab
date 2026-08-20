@@ -6,3 +6,5 @@ resources:
   - ../../../apps/base/laf-api
   - ../../../apps/base/laf-inference
   - ../../../apps/base/laf-dashboard
+  - cloudflare.yaml
+  - cloudflare-secret.yaml
