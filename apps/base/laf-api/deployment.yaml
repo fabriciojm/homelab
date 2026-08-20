@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: laf-api
+  namespace: laf-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: laf-api
+  template:
+    metadata:
+      labels:
+        app: laf-api
+    spec:
+      nodeSelector:
+        workload: services
+      containers:
+        - name: laf-api
+          image: ghcr.io/fabriciojm/laf-api:latest
+          ports:
+            - name: http
+              containerPort: 8000
+          envFrom:
+            - configMapRef:
+                name: laf-api-configmap
+          #   - secretRef:
+          #       name: laf-api-container-env
