@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: laf-api
-  namespace: laf-api
+  namespace: laf
 spec:
   ports:
     - name: http
