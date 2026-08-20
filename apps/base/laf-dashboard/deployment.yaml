@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: laf-dashboard
+  namespace: laf
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: laf-dashboard
+  template:
+    metadata:
+      labels:
+        app: laf-dashboard
+    spec:
+      nodeSelector:
+        workload: services
+      containers:
+        - name: laf-dashboard
+          image: ghcr.io/fabriciojm/laf-dashboard:latest
+          ports:
+            - name: http
+              containerPort: 8501
+          envFrom:
+            - configMapRef:
+                name: laf-dashboard-configmap
+          #   - secretRef:
+          #       name: laf-dashboard-container-env

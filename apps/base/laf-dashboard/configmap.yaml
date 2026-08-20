@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: laf-dashboard-configmap
+  namespace: laf
+data:
+  LAF_API_URL: "http://laf-api"
