@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: laf-api
+  namespace: laf
+spec:
+  ingressClassName: traefik
+  rules:
+    - host: laf-api.lan
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: laf-api
+                port:
+                  number: 80
