@@ -8,6 +8,7 @@ The repo is organized around a single `staging` cluster. Flux watches the `main`
 
 - **Flux GitOps bootstrap** in `clusters/staging/flux-system`
 - **Application manifests** in `apps`
+  - `laf`: a serverless stable diffusion inference server (running on old CPUs) written by me. Check out the [laf-api](https://github.com/fabriciojm/laf-api), the [laf-inference](https://github.com/fabriciojm/laf-inference) and a little demo [dashboard](https://laf.fabriciojm.com).
   - `audiobookshelf`: audiobook and podcast server with persistent volumes for config, metadata, audiobooks, and podcasts
   - `linkding`: bookmark manager with persistent storage and a Traefik ingress
 - **Infrastructure controllers** in `infrastructure/controllers`
