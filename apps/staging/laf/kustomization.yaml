@@ -1,0 +1,8 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: laf
+resources:
+  - ../../../apps/base/laf
+  - ../../../apps/base/laf-api
+  # - ../../../apps/base/laf-inference
+  # - ../../../apps/base/laf-dashboard
