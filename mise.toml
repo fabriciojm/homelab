@@ -3,7 +3,7 @@ helm = "latest"
 kubectl = "latest"
 pipx = "latest"
 sops = "latest"
-python = "3.14.7"
+python = "3.15.0"
 ansible = "latest"
 
 [env]
